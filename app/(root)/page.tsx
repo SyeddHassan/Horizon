@@ -1,4 +1,5 @@
 import HeaderBox from "@/components/header-box";
+import TotalBalanceBox from "@/components/total-balance-box";
 
 const Home = async () => {
   const loggedIn = { firstName: "Hassan" };
@@ -14,7 +15,11 @@ const Home = async () => {
             subtext="Access and manage your account and transactions efficiently."
           />
 
-          {/* Total Balance Box Component Here */}
+          <TotalBalanceBox
+            accounts={[]}
+            totalBanks={1}
+            totalCurrentBalance={1250.96}
+          />
         </header>
 
         {/* Recent Transitions Component Here */}
