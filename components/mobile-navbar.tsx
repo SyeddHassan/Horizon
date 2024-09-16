@@ -14,6 +14,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import PlaidLink from "./plaid-link";
 import Footer from "./footer";
 
 const MobileNav = ({ user }: MobileNavProps) => {
@@ -84,7 +85,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                   );
                 })}
 
-                {/* Plaid Link Component Here */}
+                <PlaidLink user={user} />
               </nav>
             </SheetClose>
 
