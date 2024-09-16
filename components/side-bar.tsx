@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 
 import { sidebarLinks } from "@/constants";
 
+import Footer from "./footer";
+
 const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
 
@@ -55,7 +57,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
         {/* Plaid Link Component Here */}
       </nav>
 
-      {/* Footer Component Here */}
+      <Footer user={user} />
     </section>
   );
 };
