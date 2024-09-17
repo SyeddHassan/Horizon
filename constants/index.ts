@@ -21,14 +21,8 @@ export const sidebarLinks = [
   },
 ];
 
-// good_user / good_password - Bank of America
 export const TEST_USER_ID = "6627ed3d00267aa6fa3e";
 
-// custom_user -> Chase Bank
-// export const TEST_ACCESS_TOKEN =
-//   "access-sandbox-da44dac8-7d31-4f66-ab36-2238d63a3017";
-
-// custom_user -> Chase Bank
 export const TEST_ACCESS_TOKEN =
   "access-sandbox-229476cf-25bc-46d2-9ed5-fba9df7a5d63";
 
@@ -51,17 +45,17 @@ export const ITEMS = [
 
 export const topCategoryStyles = {
   "Food and Drink": {
-    bg: "bg-blue-25",
-    circleBg: "bg-blue-100",
+    bg: "bg-pink-25",
+    circleBg: "bg-pink-100",
     text: {
-      main: "text-blue-900",
-      count: "text-blue-700",
+      main: "text-pink-900",
+      count: "text-pink-700",
     },
     progress: {
-      bg: "bg-blue-100",
-      indicator: "bg-blue-700",
+      bg: "bg-pink-100",
+      indicator: "bg-pink-700",
     },
-    icon: "/icons/monitor.svg",
+    icon: "/icons/shopping-bag.svg",
   },
   Travel: {
     bg: "bg-success-25",
@@ -76,18 +70,31 @@ export const topCategoryStyles = {
     },
     icon: "/icons/coins.svg",
   },
-  default: {
-    bg: "bg-pink-25",
-    circleBg: "bg-pink-100",
+  Payment: {
+    bg: "bg-yellow-25",
+    circleBg: "bg-yellow-100",
     text: {
-      main: "text-pink-900",
-      count: "text-pink-700",
+      main: "text-yellow-900",
+      count: "text-yellow-700",
     },
     progress: {
-      bg: "bg-pink-100",
-      indicator: "bg-pink-700",
+      bg: "bg-yellow-100",
+      indicator: "bg-yellow-700",
     },
-    icon: "/icons/shopping-bag.svg",
+    icon: "/icons/payment.svg",
+  },
+  default: {
+    bg: "bg-blue-25",
+    circleBg: "bg-blue-100",
+    text: {
+      main: "text-blue-900",
+      count: "text-blue-700",
+    },
+    progress: {
+      bg: "bg-blue-100",
+      indicator: "bg-blue-700",
+    },
+    icon: "/icons/monitor.svg",
   },
 };
 

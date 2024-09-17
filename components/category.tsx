@@ -4,8 +4,6 @@ import { topCategoryStyles } from "@/constants";
 
 import { cn } from "@/lib/utils";
 
-import { Progress } from "./ui/progress";
-
 const Category = ({ category }: CategoryProps) => {
   const {
     bg,
@@ -15,6 +13,8 @@ const Category = ({ category }: CategoryProps) => {
     icon,
   } = topCategoryStyles[category.name as keyof typeof topCategoryStyles] ||
   topCategoryStyles.default;
+
+  const progressPercentage = (category.count / category.totalCount) * 100;
 
   return (
     <div className={cn("gap-[18px] flex p-4 rounded-xl", bg)}>
@@ -26,11 +26,17 @@ const Category = ({ category }: CategoryProps) => {
           <h2 className={cn("font-medium", main)}>{category.name}</h2>
           <h3 className={cn("font-normal", count)}>{category.count}</h3>
         </div>
-        <Progress
-          value={(category.count / category.totalCount) * 100}
-          className={cn("h-2 w-full", progressBg)}
-          indicatorClassName={cn("h-2 w-full", indicator)}
-        />
+        <div
+          className={cn(
+            "relative h-2 w-full rounded-full overflow-hidden",
+            progressBg
+          )}
+        >
+          <div
+            className={cn("h-full", indicator)}
+            style={{ width: `${progressPercentage}%` }}
+          />
+        </div>
       </div>
     </div>
   );
