@@ -1,6 +1,7 @@
 import HeaderBox from "@/components/header-box";
 import TotalBalanceBox from "@/components/total-balance-box";
 import RightSidebar from "@/components/right-sidebar";
+import RecentTransactions from "@/components/recent-transactions";
 
 import { getLoggedInUser } from "@/lib/actions/user.actions";
 import { getAccount, getAccounts } from "@/lib/actions/bank.actions";
@@ -38,7 +39,12 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
           />
         </header>
 
-        {/* Recent Transitions Component Here */}
+        <RecentTransactions
+          accounts={accountsData}
+          transactions={account?.transactions}
+          appwriteItemId={appwriteItemId}
+          page={currentPage}
+        />
       </div>
 
       <RightSidebar
