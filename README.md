@@ -21,12 +21,13 @@
 
 ## Screenshots
 
-### Landing Page
+### Figma Design
+
+![Horizon Figma Design]()
+
+### Figma Design Conversion
 
 ![Horizon Landing Page]()
-
-### User Dashboard
-
 ![Dashboard Screenshot]()
 
 ### Transaction History
@@ -39,7 +40,8 @@
 
 ### Responsive Design
 
-![Responsive Design Screenshot]()
+![Responsive Design Screenshot1]()
+![Responsive Design Screenshot2]()
 
 ## Features
 
